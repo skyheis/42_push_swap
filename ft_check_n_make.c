@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 12:10:25 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/14 12:12:11 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 10:11:10 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,30 @@ int	ft_check_str(const char *avac)
 	return (1);
 }
 
+int	ft_atoi_check(int atoi, const char *str)
+{
+	int	k;
+	int posit;
+
+	if (ft_strchr(str, '-') && atoi > 0)
+		return (0);
+	else if (!ft_strchr(str, '-') && atoi < 0)
+		return (0);
+	k = ft_strlen(str);
+	while (--k >= 0 && ft_isdigit(str[k]))
+	{
+		posit = atoi % 10;
+		if (posit < 0)
+			posit *= -1;
+		if (str[k] != (posit + 48))
+			return (0);
+		atoi /= 10;
+	}
+	return (1);
+}
+
+
+
 t_istack	*ft_make_stack(int ac, const char **av)
 {
 	t_istack	*st_a;
@@ -58,8 +82,13 @@ t_istack	*ft_make_stack(int ac, const char **av)
 	while (ac-- > 1)
 	{
 		if (!ft_check_str(av[ac]))
+		{
+			ft_istclear(&st_a);
 			return (NULL);
+		}
 		atoi = ft_atoi(av[ac]);
+		if (!ft_atoi_check(atoi, av[ac]))
+			return (NULL);
 		ft_istadd_front(&st_a, ft_istnew(atoi, 'a'));
 	}
 	return (st_a);

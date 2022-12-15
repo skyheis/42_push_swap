@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 22:48:04 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/14 12:11:15 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 10:14:43 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,7 @@ int	main(int ac, const char **av)
 	t_istack	*st_b;
 
 	if (ac < 3)
-	{
-		ft_putstr_fd("Error\n", 2);
-		return (1);
-	}
+		return (0);
 	st_a = ft_make_stack(ac, av);
 	st_b = NULL;
 	if (!st_a)

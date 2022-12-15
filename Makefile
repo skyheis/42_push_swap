@@ -6,7 +6,7 @@
 #    By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/07 17:49:20 by ggiannit          #+#    #+#              #
-#    Updated: 2022/12/14 12:19:34 by ggiannit         ###   ########.fr        #
+#    Updated: 2022/12/15 09:46:31 by ggiannit         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ ARINC = $(addprefix $(ARUSDDIR),$(ARUSD))
 CC = cc
 AR = ar
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -g -Wall -Wextra -Werror
 
 ###### COLORS ########
 
@@ -128,10 +128,10 @@ libftre:
 re: fclean all
 
 starting:
-	@echo "$(WHITE)🧙as a wizard, I made appear your $(CYAN) $(BNUS) $(WHITE)binary!🪄 💫$(DEF_COLOR)"
+	@echo "$(WHITE)🧙as a wizard, I made appear your $(CYAN) $(PRNAME) $(WHITE)binary!🪄 💫$(DEF_COLOR)"
 
 starting_bonus:
-	@echo "$(WHITE)🧙as a wizard, I made appear your $(CYAN) $(PRNAME) $(WHITE)binary!🪄 💫$(DEF_COLOR)"
+	@echo "$(WHITE)🧙as a wizard, I made appear your $(CYAN) $(BNUS) $(WHITE)binary!🪄 💫$(DEF_COLOR)"
 
 .PHONY: all clean fclean re bonus starting starting_bonus .c.o libft libftclean libftre exec
 .SUFFIXES: .c .o 
