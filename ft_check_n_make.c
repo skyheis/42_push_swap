@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 12:10:25 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/15 10:11:10 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:22:45 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,6 @@ int	ft_atoi_check(int atoi, const char *str)
 	}
 	return (1);
 }
-
-
 
 t_istack	*ft_make_stack(int ac, const char **av)
 {

@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 22:48:04 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/14 12:25:09 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:22:14 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ t_stmoul	*ft_make_stack_moul(int ac, const char **av)
 		if (!ft_check_str(av[ac]))
 			return (NULL);
 		atoi = ft_atoi(av[ac]);
+		if (!ft_atoi_check(atoi, av[ac]))
+			return (NULL);
 		ft_istadd_front_moul(&st_a, ft_istnew_moul(atoi));
 	}
 	return (st_a);
@@ -34,10 +36,7 @@ int	main(int ac, const char **av)
 	t_stmoul	*st_b;
 
 	if (ac < 2)
-	{
-		ft_printf("Error\n");
-		return (1);
-	}
+		return (0);
 	st_a = ft_make_stack_moul(ac, av);
 	st_b = NULL;
 	if (!st_a)

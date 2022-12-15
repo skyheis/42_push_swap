@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:33:33 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/14 12:23:58 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 12:10:12 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ int	ft_swappalo(t_stmoul **st_a, t_stmoul **st_b, const char *the_rule)
 	if (!ft_strncmp(the_rule, "rra\n", 4))
 		ft_ist_rerot_moul(st_a);
 	else if (!ft_strncmp(the_rule, "rrb\n", 4))
-		ft_ist_rerot_moul(st_a);
-	else if (!ft_strncmp(the_rule, "rrb\n", 4))
+		ft_ist_rerot_moul(st_b);
+	else if (!ft_strncmp(the_rule, "rrr\n", 4))
 	{
 		ft_ist_rerot_moul(st_a);
 		ft_ist_rerot_moul(st_b);

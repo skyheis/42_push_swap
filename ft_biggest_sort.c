@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:26:13 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/13 21:48:47 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 14:00:30 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,4 +138,6 @@ void	ft_manage_big(t_istack **st_a, t_istack **st_b)
 	}
 	count_stack = ft_istsize(*st_b);
 	ft_biggest_push(st_a, st_b, ft_findmin(*st_a, *st_b), &count_stack);
+	while (ft_istlast(*st_a)->num < (*st_a)->num)
+		ft_ist_rerot(st_a);
 }

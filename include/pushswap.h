@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 22:48:31 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/14 12:12:07 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:22:42 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct s_istack
 int			ft_check_duble_int(t_istack *st_n);
 int			ft_check_str(const char *avacu);
 t_istack	*ft_make_stack(int ac, const char **av);
+int			ft_atoi_check(int atoi, const char *str);
 
 /* ft_algo_utils */
 int			ft_is_thanos(t_istack *st_n, int n, int rev);
