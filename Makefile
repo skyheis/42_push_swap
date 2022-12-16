@@ -6,7 +6,7 @@
 #    By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/07 17:49:20 by ggiannit          #+#    #+#              #
-#    Updated: 2022/12/15 09:46:31 by ggiannit         ###   ########.fr        #
+#    Updated: 2022/12/16 09:44:23 by ggiannit         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ ARINC = $(addprefix $(ARUSDDIR),$(ARUSD))
 CC = cc
 AR = ar
 RM = rm -f
-CFLAGS = -g -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 ###### COLORS ########
 
@@ -106,7 +106,7 @@ bonus: starting_bonus ${OBJS} ${BNOBJS}
 
 clean: libftclean
 	@echo "$(WHITE)\"wait.. is $(CYAN)${PRNAME}$(WHITE) all trash? 🧹\" $(DEF_COLOR)"
-	@${RM} ${OBJS} 
+	@${RM} ${OBJS} ${BNOBJS}
 	@echo "$(RED)All objects removed with $(WHITE)${RM}$(DEF_COLOR)"
 	@echo ""
 

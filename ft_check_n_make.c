@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 12:10:25 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/15 11:22:45 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/15 15:48:20 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	ft_check_str(const char *avac)
 int	ft_atoi_check(int atoi, const char *str)
 {
 	int	k;
-	int posit;
+	int	posit;
 
 	if (ft_strchr(str, '-') && atoi > 0)
 		return (0);

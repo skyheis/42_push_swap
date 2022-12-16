@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:33:33 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/15 12:10:12 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/16 09:31:10 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ int	ft_exec_your_rules(t_stmoul **st_a, t_stmoul **st_b)
 		ft_free_null(&nline);
 		nline = get_next_line(0);
 	}
-	if (!ft_is_thanos_moul(*st_a, 0) && !ft_istsize_moul(*st_b))
+	if (!ft_is_thanos_moul(*st_a, 0) || ft_istsize_moul(*st_b))
 	{
 		ft_printf("KO\n");
 		return (0);
