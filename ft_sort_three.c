@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:02:06 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/13 21:11:53 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/20 11:11:24 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	ft_sort_three(t_istack **st_a, t_istack **st_b)
 	}
 }
 
-void	ft_rev_sort_three(t_istack **st_a, t_istack **st_b)
+/*void	ft_rev_sort_three(t_istack **st_a, t_istack **st_b)
 {
 	if (ft_is_thanos(*st_a, 3, 1))
 		return ;
@@ -66,4 +66,4 @@ void	ft_rev_sort_three(t_istack **st_a, t_istack **st_b)
 	}
 	else if ((*st_a)->num < (*st_a)->next->num)
 		ft_istswap(*st_a);
-}
+}*/

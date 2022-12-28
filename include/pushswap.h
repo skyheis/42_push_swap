@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 22:48:31 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/15 11:22:42 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/20 11:11:07 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void		ft_small_sort(t_istack **st_a, t_istack **st_b, int n_size);
 
 /* ft_sort_three */
 void		ft_sort_three(t_istack **st_a, t_istack **st_b);
-void		ft_rev_sort_three(t_istack **st_a, t_istack **st_b);
+//void		ft_rev_sort_three(t_istack **st_a, t_istack **st_b);
 
 /* ft_biggest_sort */
 void		ft_biggest_sort(t_istack **st_a, t_istack **st_b,

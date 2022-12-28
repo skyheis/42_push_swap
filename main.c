@@ -6,7 +6,7 @@
 /*   By: ggiannit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 22:48:04 by ggiannit          #+#    #+#             */
-/*   Updated: 2022/12/15 10:14:43 by ggiannit         ###   ########.fr       */
+/*   Updated: 2022/12/20 11:02:59 by ggiannit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_sorting(t_istack **st_a, t_istack **st_b)
 		ft_printf("sa\n");
 	else if (stack_size == 3)
 		ft_sort_three(st_a, st_b);
-	else if (stack_size < 7)
+	else if (stack_size < 6)
 		ft_small_sort(st_a, st_b, ft_istsize(*st_a));
 	else
 		ft_manage_big(st_a, st_b);
