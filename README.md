@@ -39,7 +39,7 @@ This is the first project where I had to write a complex algorithm. I learned a 
 
 ## Test and visualization
 
-I wrote my own [tester](git@github.com:skyheis/push_swap_moulinette) to check how many operations my algorithm need to sort a stack of 100 and 500 numbers. I also wrote a python [script](https://github.com/skyheis/push_swap_randomizer) to get a random series of numbers. A great visualization tool is [here](https://github.com/o-reo/push_swap_visualizer).
+I wrote my own [tester](https://github.com/skyheis/push_swap_moulinette) to check how many operations my algorithm need to sort a stack of 100 and 500 numbers. I also wrote a python [script](https://github.com/skyheis/push_swap_randomizer) to get a random series of numbers. A great visualization tool is [here](https://github.com/o-reo/push_swap_visualizer).
 
 ## Post considerations
 
